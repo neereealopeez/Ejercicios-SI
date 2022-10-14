@@ -1,12 +1,9 @@
 #Programa que lea una cadena por teclado y compruebe si es una letra mayúscula.
-from curses.ascii import isupper
 
+texto=""
+texto= (str)(input("Dime la cadena "))
 
-cadena=""
+print(texto.isupper)
 
-cadena=input("Dime una cadena ")
-
-if cadena.islower()
-False
->>> 'hola'.islower()
-True
+if (texto.isupper==False):
+    print("Hay una mayúscula en este texto")
