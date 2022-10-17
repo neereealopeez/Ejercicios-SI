@@ -1,14 +1,20 @@
 #Algoritmo que pida tres números y los muestre ordenados (de mayor a menor)
-num1=0
-num2=0
-num3=0
-num1= (int)(input("Dime el primer número "))
-num2= (int)(input("Dime el segundo número "))
-num3= (int)(input("Dime el tercer número "))
+vNum=[]
+num=int(input("Dime el primer número "))
+vNum.append(num)
+num=int(input("Dime el segundo número "))
+vNum.append(num)
+num=int(input("Dime el tercer número "))
+vNum.append(num)
 
-if (num1<num2<num3):
-    print("El tercer número es mayor")
-if (num1>num2>num3):
-    print("El primer número es mayor")
-if (num1<num2>num3):
-    print("El segundo número es mayor")
+vNum.sort(reverse=True)
+print(vNum)
+ 
+print("El mayor es", vNum[0])
+
+ultimo=len(vNum)
+
+print("El menor es", vNum[ultimo-1])
+
+print(max(vNum))
+print(min(vNum))
